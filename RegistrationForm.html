@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>REGISTRATION FORM</title>
+    </head>
+
+    <body>
+        
+        <table cellspacing="20" style="border: 1px solid black;margin: auto;margin-top: 50px;">
+            <tbody>
+            <tr>
+                <th colspan="2"><h2>New Registration</h2></th>
+            </tr>
+            <tr>
+                <td><label for="FIRSTNAME">First Name</label></td>
+                <td><input type="text" placeholder="Enter your First name" name="FIRSTNAME" id="fname"></td>
+            </tr>
+            <tr>
+                <td><label for="LASTNAME">Last Name</label></td>
+                <td><input type="text" placeholder="Enter your First name" name="LASTNAME" id="lname"></td>
+            </tr>
+            <tr>
+                <td><label for="GENDER">Gender</label></td>
+                <td><input type="radio" value="Male" name="GENDER" checked>Male
+                <input type="radio" value="Female" name="GENDER">Female</td>
+            </tr>
+            <tr>
+                <td><label for="EMAIL">Email-ID</label></td>
+                <td><input type="text" name="EMAIL" placeholder="Email-ID"></td>
+            </tr>
+            <tr>
+                <td><label for="POSTAL">Postal Code</label></td>
+                <td>
+                    <select name="POSTAL">
+                        <option value="">MALAD</option>
+                        <option value="">KANDIVALI</option>
+                        <option value="">BORIVALI</option>
+                        <option value="">DAHISAR</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="PASSWORD">Password</label></td>
+                <td><input type="password" placeholder="Enter Password" name="PASSWORD"></td>
+            </tr>
+
+            <tr>
+                <td><a href="Form.html">Back to Login</a></td>
+                <td><input type="button" name="" id="Register" onclick="validateForm()" value="Register"></td>
+            </tr>
+        </tbody>
+        </table>
+        <script src="../JAVASCRIPT/Validation.js"></script>
+    </body>
+</html>
